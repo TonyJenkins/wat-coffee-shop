@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Drinks — Coffee Shop</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'drinks_counter/index.css' %}">
+</head>
+<body>
+<main class="page">
+    <article class="card" role="main" aria-labelledby="drinks-title">
+        <header>
+            <h1 id="drinks-title">All Drinks</h1>
+            <p class="meta">List of drinks available in the coffee shop.</p>
+        </header>
+        <section class="content" aria-describedby="drinks-desc">
+            <p id="drinks-desc" class="desc">Replace the placeholder below with a template loop to render each
+                drink.</p>
+            <div id="drinks-list" class="drinks-list" role="list">
+                <div class="placeholder">
+                    Drinks list will appear here. (Placeholder)
+                </div>
+            </div>
+        </section>
+    </article>
+</main>
+</body>
+</html>

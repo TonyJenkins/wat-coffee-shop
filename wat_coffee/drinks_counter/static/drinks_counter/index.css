@@ -1,0 +1,59 @@
+:root {
+  --bg: #f7f8fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #2b6cb0;
+  --radius: 12px;
+  --maxw: 900px;
+  --gap: 16px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #eef2f7 60%);
+  color: #0f172a;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: var(--maxw);
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-sizing: border-box;
+  border: 1px solid rgba(15,23,42,0.04);
+  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+}
+
+h1 { margin: 0 0 6px 0; font-size: 1.5rem; }
+.meta { margin: 0 0 12px 0; color: var(--muted); font-size: 0.95rem; }
+
+.content { margin-top: 8px; }
+.desc { color: var(--muted); font-size: 0.95rem; margin-bottom: 12px; }
+
+.drinks-list { min-height: 120px; border-radius: 8px; padding: 18px; background: rgba(15,23,42,0.02); display: flex; align-items: center; justify-content: center; }
+
+.placeholder {
+  color: var(--muted);
+  font-style: italic;
+  background: transparent;
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .card { padding: 20px; }
+  .drinks-list { padding: 12px; }
+}
