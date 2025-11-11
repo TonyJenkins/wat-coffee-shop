@@ -1,1 +1,57 @@
-<h1>Drink Display</h1>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>{{ drink.name }} \— Drink</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'drinks_counter/drink_display.css' %}">
+</head>
+<body>
+<main class="page">
+    <article class="card" role="article" aria-labelledby="drink-title">
+        <header>
+            <div class="row">
+                <div>
+                    <h1 id="drink-title">{{ drink.name }}</h1>
+                    <p class="meta">A coffee shop item</p>
+                    <div class="labels">
+                        <span class="badge price">${{ drink.price }}</span>
+                        {% if drink.available %}
+                            <span class="badge available">Available</span>
+                        {% else %}
+                            <span class="badge unavailable">Unavailable</span>
+                        {% endif %}
+                        {% if drink.caffeine_mg %}
+                            <span class="badge" style="background:#f59e0b;">{{ drink.caffeine_mg }} mg</span>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="grid" aria-describedby="desc">
+            <div>
+                {% if drink.description %}
+                    <h2 style="margin:18px 0 8px 0;font-size:1.05rem;color:#111827;">Description</h2>
+                    <p id="desc" class="desc">{{ drink.description }}</p>
+                {% else %}
+                    <p class="desc" style="font-style:italic;color:var(--muted);">No description provided.</p>
+                {% endif %}
+
+                <p class="timestamps">Created: {{ drink.created_at|date:"Y-m-d H:i" }} \—
+                    Updated: {{ drink.updated_at|date:"Y-m-d H:i" }}</p>
+            </div>
+
+            <aside>
+                <ul class="meta-list" aria-label="Details">
+                    <li><b>Size:</b> {{ drink.get_size_display }}</li>
+                    <li><b>Price:</b> ${{ drink.price }}</li>
+                    <li><b>Availability:</b> {% if drink.available %}Yes{% else %}No{% endif %}</li>
+                </ul>
+            </aside>
+        </section>
+    </article>
+</main>
+</body>
+</html>

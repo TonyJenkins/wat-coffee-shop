@@ -1,0 +1,143 @@
+/* CSS for drink_display */
+:root{
+  --bg:#f7f8fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#2b6cb0;
+  --success:#16a34a;
+  --danger:#dc2626;
+  --shadow: 0 6px 18px rgba(15,23,42,0.06);
+  --radius:12px;
+  --maxw:720px;
+  --gap:18px;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+}
+
+html,body{
+  height:100%;
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg,var(--bg),#eef2f7 60%);
+  color:#0f172a;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.page{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:48px 16px;
+}
+
+.card{
+  width:100%;
+  max-width:var(--maxw);
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:28px;
+  box-sizing:border-box;
+  border:1px solid rgba(15,23,42,0.04);
+}
+
+.row{
+  display:flex;
+  gap:var(--gap);
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+h1{
+  margin:0 0 8px 0;
+  font-size:1.5rem;
+  line-height:1.15;
+  letter-spacing:-0.02em;
+}
+
+.meta{
+  color:var(--muted);
+  font-size:0.95rem;
+  margin:0;
+}
+
+.labels{
+  display:flex;
+  gap:8px;
+  align-items:center;
+  margin-top:12px;
+  flex-wrap:wrap;
+}
+
+.badge{
+  font-size:0.85rem;
+  color:#fff;
+  padding:6px 10px;
+  border-radius:999px;
+  display:inline-block;
+  box-shadow:0 2px 6px rgba(15,23,42,0.06);
+}
+
+.price{
+  background:linear-gradient(90deg, #0ea5e9, #2b6cb0);
+  font-weight:600;
+}
+
+.available{
+  background:var(--success);
+}
+
+.unavailable{
+  background:var(--danger);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 140px;
+  gap:18px;
+  align-items:start;
+  margin-top:18px;
+}
+
+.desc{
+  line-height:1.6;
+  color:#111827;
+  background:transparent;
+  font-size:0.98rem;
+}
+
+.meta-list{
+  font-size:0.9rem;
+  color:var(--muted);
+  margin:0;
+  padding:0;
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+.meta-list b{ color:#0f172a; font-weight:600; }
+
+.timestamps{
+  margin-top:16px;
+  color:var(--muted);
+  font-size:0.85rem;
+}
+
+.slug{
+  font-family:var(--mono);
+  font-size:0.88rem;
+  color:var(--muted);
+  background:rgba(15,23,42,0.02);
+  padding:6px 8px;
+  border-radius:6px;
+  display:inline-block;
+}
+
+@media (max-width:640px){
+  .grid{ grid-template-columns:1fr; }
+  .labels{ gap:6px; }
+}
