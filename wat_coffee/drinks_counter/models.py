@@ -22,8 +22,13 @@ class Drink(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    def get_absolute_url(self):
+        from django.urls import reverse
+
+        return reverse('drinks_counter:drink_display', kwargs={'slug': self.slug})
+
     def __str__(self):
-        return f"{self.get_size_display()} {self.name})"
+        return f"{self.get_size_display()} {self.name}"
 
     class Meta:
         ordering = ['name']
