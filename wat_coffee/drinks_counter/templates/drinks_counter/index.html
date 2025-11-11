@@ -19,7 +19,19 @@
                 drink.</p>
             <div id="drinks-list" class="drinks-list" role="list">
                 <div class="placeholder">
-                    Drinks list will appear here. (Placeholder)
+                    {% if drinks %}
+                        <ul id="drinks-list" class="drinks-list" role="list">
+                            {% for drink in drinks %}
+                                <li role="listitem" class="drink-item">
+                                    <a href="{% url 'drinks_counter:drink_display' drink.slug %}">{{ drink.name }} — £{{ drink.price }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <div id="drinks-list" class="drinks-list placeholder">
+                            No drinks found.
+                        </div>
+                    {% endif %}
                 </div>
             </div>
         </section>
