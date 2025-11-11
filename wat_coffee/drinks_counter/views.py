@@ -1,3 +1,14 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
-# Create your views here.
+from .models import Drink
+
+
+def drink_display(request, slug):
+
+    drink = get_object_or_404(Drink, slug=slug)
+
+    context = {
+        'drink': drink
+    }
+
+    return render(request, 'drinks_counter/drink_display.html', context)
