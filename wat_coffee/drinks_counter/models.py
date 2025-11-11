@@ -12,7 +12,7 @@ class Drink(models.Model):
 
     name = models.CharField(max_length=100, unique=True)
     description = models.TextField(blank=True)
-    size = models.CharField(max_length=1, choices=SIZE_CHOICES, default=MEDIUM)
+    size = models.CharField(max_length=1, choices=SIZE_CHOICES, default='M')
     price = models.DecimalField(max_digits=6, decimal_places=2)
     available = models.BooleanField(default=True)
     caffeine_mg = models.PositiveIntegerField(null=True, blank=True)
