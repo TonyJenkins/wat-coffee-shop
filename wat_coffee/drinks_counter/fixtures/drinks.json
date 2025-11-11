@@ -1,0 +1,302 @@
+[
+  {
+    "model": "drinks_counter.drink",
+    "pk": 1,
+    "fields": {
+      "name": "Espresso",
+      "slug": "espresso",
+      "description": "A short, strong shot of coffee.",
+      "size": "S",
+      "price": "2.00",
+      "available": true,
+      "caffeine_mg": 64,
+      "created_at": "2023-01-01T08:00:00Z",
+      "updated_at": "2023-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "drinks_counter.drink",
+    "pk": 2,
+    "fields": {
+      "name": "Americano",
+      "slug": "americano",
+      "description": "Espresso diluted with hot water.",
+      "size": "M",
+      "price": "2.50",
+      "available": true,
+      "caffeine_mg": 95,
+      "created_at": "2023-01-02T09:15:00Z",
+      "updated_at": "2023-01-02T11:45:00Z"
+    }
+  },
+  {
+    "model": "drinks_counter.drink",
+    "pk": 3,
+    "fields": {
+      "name": "Latte",
+      "slug": "latte",
+      "description": "Espresso with steamed milk and a light layer of foam.",
+      "size": "M",
+      "price": "3.50",
+      "available": true,
+      "caffeine_mg": 77,
+      "created_at": "2023-01-03T07:30:00Z",
+      "updated_at": "2023-01-03T09:00:00Z"
+    }
+  },
+  {
+    "model": "drinks_counter.drink",
+    "pk": 4,
+    "fields": {
+      "name": "Cappuccino",
+      "slug": "cappuccino",
+      "description": "Equal parts espresso, steamed milk, and foam.",
+      "size": "M",
+      "price": "3.50",
+      "available": true,
+      "caffeine_mg": 77,
+      "created_at": "2023-01-04T10:00:00Z",
+      "updated_at": "2023-01-04T13:00:00Z"
+    }
+  },
+  {
+    "model": "drinks_counter.drink",
+    "pk": 5,
+    "fields": {
+      "name": "Mocha",
+      "slug": "mocha",
+      "description": "Chocolate and espresso topped with steamed milk.",
+      "size": "L",
+      "price": "4.25",
+      "available": true,
+      "caffeine_mg": 80,
+      "created_at": "2023-01-05T08:20:00Z",
+      "updated_at": "2023-01-05T09:50:00Z"
+    }
+  },
+  {
+    "model": "drinks_counter.drink",
+    "pk": 6,
+    "fields": {
+      "name": "Flat White",
+      "slug": "flat-white",
+      "description": "Smooth espresso with velvety steamed milk.",
+      "size": "S",
+      "price": "3.25",
+      "available": true,
+      "caffeine_mg": 85,
+      "created_at": "2023-01-06T08:00:00Z",
+      "updated_at": "2023-01-06T10:00:00Z"
+    }
+  },
+  {
+    "model": "drinks_counter.drink",
+    "pk": 7,
+    "fields": {
+      "name": "Cortado",
+      "slug": "cortado",
+      "description": "Espresso cut with a small amount of warm milk.",
+      "size": "S",
+      "price": "2.75",
+      "available": true,
+      "caffeine_mg": 50,
+      "created_at": "2023-01-07T06:45:00Z",
+      "updated_at": "2023-01-07T08:00:00Z"
+    }
+  },
+  {
+    "model": "drinks_counter.drink",
+    "pk": 8,
+    "fields": {
+      "name": "Macchiato",
+      "slug": "macchiato",
+      "description": "Espresso 'stained' with a small dash of milk.",
+      "size": "S",
+      "price": "2.25",
+      "available": true,
+      "caffeine_mg": 80,
+      "created_at": "2023-01-08T07:00:00Z",
+      "updated_at": "2023-01-08T08:30:00Z"
+    }
+  },
+  {
+    "model": "drinks_counter.drink",
+    "pk": 9,
+    "fields": {
+      "name": "Iced Coffee",
+      "slug": "iced-coffee",
+      "description": "Chilled brewed coffee served over ice.",
+      "size": "L",
+      "price": "3.00",
+      "available": true,
+      "caffeine_mg": 95,
+      "created_at": "2023-01-09T09:00:00Z",
+      "updated_at": "2023-01-09T12:30:00Z"
+    }
+  },
+  {
+    "model": "drinks_counter.drink",
+    "pk": 10,
+    "fields": {
+      "name": "Cold Brew",
+      "slug": "cold-brew",
+      "description": "Slow-steeped coffee served cold for a smooth taste.",
+      "size": "L",
+      "price": "3.75",
+      "available": true,
+      "caffeine_mg": 150,
+      "created_at": "2023-01-10T11:00:00Z",
+      "updated_at": "2023-01-10T13:15:00Z"
+    }
+  },
+  {
+    "model": "drinks_counter.drink",
+    "pk": 11,
+    "fields": {
+      "name": "Nitro Cold Brew",
+      "slug": "nitro-cold-brew",
+      "description": "Cold brew infused with nitrogen for a creamy texture.",
+      "size": "L",
+      "price": "4.25",
+      "available": true,
+      "caffeine_mg": 170,
+      "created_at": "2023-01-11T08:10:00Z",
+      "updated_at": "2023-01-11T10:40:00Z"
+    }
+  },
+  {
+    "model": "drinks_counter.drink",
+    "pk": 12,
+    "fields": {
+      "name": "Chai Latte",
+      "slug": "chai-latte",
+      "description": "Spiced tea concentrate with steamed milk.",
+      "size": "M",
+      "price": "3.25",
+      "available": true,
+      "caffeine_mg": 40,
+      "created_at": "2023-01-12T07:20:00Z",
+      "updated_at": "2023-01-12T09:55:00Z"
+    }
+  },
+  {
+    "model": "drinks_counter.drink",
+    "pk": 13,
+    "fields": {
+      "name": "Matcha Latte",
+      "slug": "matcha-latte",
+      "description": "Ceremonial matcha whisked with steamed milk.",
+      "size": "M",
+      "price": "3.50",
+      "available": true,
+      "caffeine_mg": 70,
+      "created_at": "2023-01-13T08:05:00Z",
+      "updated_at": "2023-01-13T11:00:00Z"
+    }
+  },
+  {
+    "model": "drinks_counter.drink",
+    "pk": 14,
+    "fields": {
+      "name": "Hot Chocolate",
+      "slug": "hot-chocolate",
+      "description": "Rich steamed chocolate with milk.",
+      "size": "M",
+      "price": "2.75",
+      "available": true,
+      "caffeine_mg": 10,
+      "created_at": "2023-01-14T06:00:00Z",
+      "updated_at": "2023-01-14T07:30:00Z"
+    }
+  },
+  {
+    "model": "drinks_counter.drink",
+    "pk": 15,
+    "fields": {
+      "name": "Vanilla Latte",
+      "slug": "vanilla-latte",
+      "description": "Latte with a touch of vanilla syrup.",
+      "size": "L",
+      "price": "4.00",
+      "available": true,
+      "caffeine_mg": 77,
+      "created_at": "2023-01-15T09:25:00Z",
+      "updated_at": "2023-01-15T12:00:00Z"
+    }
+  },
+  {
+    "model": "drinks_counter.drink",
+    "pk": 16,
+    "fields": {
+      "name": "Caramel Macchiato",
+      "slug": "caramel-macchiato",
+      "description": "Espresso with vanilla and caramel drizzle.",
+      "size": "L",
+      "price": "4.25",
+      "available": false,
+      "caffeine_mg": 80,
+      "created_at": "2023-01-16T10:30:00Z",
+      "updated_at": "2023-01-16T15:45:00Z"
+    }
+  },
+  {
+    "model": "drinks_counter.drink",
+    "pk": 17,
+    "fields": {
+      "name": "Affogato",
+      "slug": "affogato",
+      "description": "A shot of espresso poured over a scoop of vanilla ice cream.",
+      "size": "S",
+      "price": "3.00",
+      "available": true,
+      "caffeine_mg": 63,
+      "created_at": "2023-01-17T08:00:00Z",
+      "updated_at": "2023-01-17T11:20:00Z"
+    }
+  },
+  {
+    "model": "drinks_counter.drink",
+    "pk": 18,
+    "fields": {
+      "name": "Turkish Coffee",
+      "slug": "turkish-coffee",
+      "description": "Finely ground coffee brewed in a cezve.",
+      "size": "S",
+      "price": "2.50",
+      "available": true,
+      "caffeine_mg": 80,
+      "created_at": "2023-01-18T07:40:00Z",
+      "updated_at": "2023-01-18T09:10:00Z"
+    }
+  },
+  {
+    "model": "drinks_counter.drink",
+    "pk": 19,
+    "fields": {
+      "name": "Ristretto",
+      "slug": "ristretto",
+      "description": "A shorter, more concentrated shot of espresso.",
+      "size": "S",
+      "price": "1.75",
+      "available": true,
+      "caffeine_mg": 70,
+      "created_at": "2023-01-19T06:50:00Z",
+      "updated_at": "2023-01-19T08:00:00Z"
+    }
+  },
+  {
+    "model": "drinks_counter.drink",
+    "pk": 20,
+    "fields": {
+      "name": "Long Black",
+      "slug": "long-black",
+      "description": "Hot water topped with a double shot of espresso.",
+      "size": "M",
+      "price": "2.50",
+      "available": true,
+      "caffeine_mg": 95,
+      "created_at": "2023-01-20T08:00:00Z",
+      "updated_at": "2023-01-20T10:30:00Z"
+    }
+  }
+]
